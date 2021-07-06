@@ -1,0 +1,250 @@
+/*This is the primary CSS document which styles everything for all webpages*/
+
+@import url("https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed");
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.signinbutton {
+  width: 90px !important;
+  height: 30px !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.display-inline {
+  display: inline-block;
+}
+
+.huon-logo-nav {
+  max-width: 240px;
+  max-height: 120px;
+  display: inline-block;
+  float: left;
+}
+
+.huon-logo-container {
+  max-width: 240px;
+  max-height: 120px;
+}
+
+#main
+{
+  width: 80vh;
+  height: 80vh;
+}
+
+a {
+  color: #5f0000;
+  line-height: inherit;
+  text-decoration: none;
+}
+a:hover {
+  color: #213149;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 700;
+  color: #000;
+  font-size: revert;
+}
+
+p {
+  margin: 0 0 1em 0;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: large;
+}
+
+p.intro:before {
+  content: "INKING INSTITUTIONS ";
+  font-weight: bold;
+}
+
+.container {
+  max-width: 100%;
+}
+
+img#initial {
+  max-width: 65%;
+  max-height: 85%;
+}
+
+/* Navbar Styles */
+#site-title {
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 30px;
+  text-align: left;
+  padding-right: 30px;
+}
+
+#nav-subtitle {
+  font: 1em "Barlow Semi Condensed", sans-serif;
+  font-weight: 400;
+  color: #5f0000;
+  text-transform: uppercase;
+  text-align: left;
+  margin: 0;
+  padding-right: 30px;
+}
+
+#responsive-navbar-nav {
+  text-transform: uppercase;
+  font-size: large;
+}
+/* Homepage Styles */
+#home > div {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+p.intro {
+  text-align: justify;
+  padding-top: 25%;
+}
+
+/* Footer Styles */
+#logo_wludh {
+  width: 60%;
+}
+
+#logo_loyola {
+  width: 60%;
+}
+
+#logo_unf {
+  margin-top: -1em;
+  width: 60%;
+}
+
+#logo_neh {
+  width: 60%;
+}
+
+#logo_marucelliana {
+  margin-right: 0.5em;
+  width: 25%;
+}
+
+#logo_archiginnasio {
+  width: 20%;
+}
+
+#logo_vescovile {
+  width: 85%;
+}
+
+/* Static Page Styles */
+#toc {
+  list-style-type: none;
+  font-size: 1.5em;
+}
+
+#toc-title {
+  margin-left: 1em;
+}
+
+.bib {
+  list-style-type: none;
+  text-align: left;
+}
+
+.bibentry{
+  font-size: 1.2em;
+}
+
+/* Collaborators Styles */
+.collab_title {
+  text-align: left;
+}
+
+.collab {
+  text-align: left;
+  margin-left: 1em;
+}
+
+/* Custom Scrollbar */
+.custom-scroll::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+.custom-scroll::-webkit-scrollbar {
+  width: 8px;
+  background-color: #f5f5f5;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(250, 250, 250, 0.3);
+  box-shadow: inset 0 0 6px rgba(250, 250, 250, 0.3);
+  background-color: #5f0000;
+}
+
+/* Styles for mobile */
+@media only screen and (max-width: 951px) {
+  /* Navbar Styles */
+  #site-title {
+    font-size: 1.3rem !important;
+  }
+
+  #nav-subtitle {
+    display: none;
+  }
+
+  #home > div {
+    padding: 13px;
+  }
+
+  /* Homepage Styles */
+  p.intro::first-letter {
+    color: tomato;
+    font-size: 60px;
+  }
+
+  p.intro:before {
+    content: "LINKING INSTITUTIONS ";
+    font-weight: bold;
+  }
+
+  #big-l {
+    display: none !important;
+  }
+
+  p.intro {
+    padding-top: 1%;
+  }
+
+  .footer {
+    margin-top: 1rem;
+    padding: 1rem;
+    color: blue;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+
+/*bib styling*/
+.bib {
+  list-style: none;
+  text-align: left;
+}
+
+/*digital edition*/
